@@ -1,0 +1,115 @@
+.login-screen {
+  background-image: url(../static/login-back.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover; }
+
+html, body, #root {
+  height: 100%; }
+
+.login-container {
+  opacity: 0.6;
+  padding-top: 20px;
+  width: 400px;
+  height: 375px;
+  border-radius: 30px;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  background-color: #2D3C3D;
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+  /* ANIMATIONS ================ */ }
+  .login-container .login-submit {
+    text-align: center; }
+  .login-container .login-banner {
+    text-align: center;
+    color: wheat;
+    padding-bottom: 30px; }
+  .login-container .group {
+    position: relative;
+    margin-bottom: 45px;
+    margin-left: 45px; }
+  .login-container input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background-color: #2D3C3D;
+    color: white; }
+  .login-container input:focus {
+    outline: none; }
+  .login-container label {
+    color: wheat;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  .login-container input:focus ~ label, .login-container input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #d2c758; }
+  .login-container .bar {
+    position: relative;
+    display: block;
+    width: 300px; }
+  .login-container .bar:before, .login-container .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #d2c758;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  .login-container .bar:before {
+    left: 50%; }
+  .login-container .bar:after {
+    right: 50%; }
+  .login-container input:focus ~ .bar:before, .login-container input:focus ~ .bar:after {
+    width: 50%; }
+  .login-container .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5; }
+  .login-container input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease; }
+
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #d2c758; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #d2c758; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+@keyframes inputHighlighter {
+  from {
+    background: #d2c758; }
+  to {
+    width: 0;
+    background: transparent; } }
